@@ -1,8 +1,10 @@
 
 module.exports = {
+   
     title: '三藏',
     description: 'Just palying around',
     themeConfig: {
+        logo:'/logo/1.png',
         nav: [
             {
                 text: 'HTML',
