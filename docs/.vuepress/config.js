@@ -98,7 +98,8 @@ module.exports = {
                     { text: '服务端渲染', link: '/language/japanese/' },
                     { text: '版本控制', link: '/language/japanese/' },
                 ]
-            }
+            },
+            { text: '面试', link: '/interview/index' }
         ],
         sidebar: 'auto',
         lastUpdated: 'Last Updated', // string | boolean
