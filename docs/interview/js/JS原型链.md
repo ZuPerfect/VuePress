@@ -1,7 +1,7 @@
 
 # 一张图看清楚原型链
 
- ![方法执行图](/jsPrototype.png "JS原型链")
+ ![方法执行图](/img/jsPrototype.png "JS原型链")
 
  ## 概括
  每个函数都有prototype属性，除了Function.prototype.bind()，该属性指向原型
