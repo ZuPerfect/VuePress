@@ -4,7 +4,7 @@
  ![方法执行图](/img/jsPrototype.png "JS原型链")
 
  ## 概括
- 每个函数都有prototype属性，除了Function.prototype.bind()，该属性指向原型
+ 每个函数都有prototype属性，除了Function.prototype.bind()，该属性指向原型(注意：typeof Function.prototype -> 'function')
 
  每个对象都有__proto__属性，指向创建该对象的构造函数的原型。
 
