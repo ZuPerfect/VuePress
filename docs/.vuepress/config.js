@@ -1,6 +1,6 @@
 module.exports = {
   title: "三藏",
-  description: "Just palying around",
+  description: "不积跬步无以至千里",
   head: [["link", { rel: "icon", href: "/logo/1.png" }]],
   themeConfig: {
     logo: "/logo/1.png",
@@ -44,9 +44,12 @@ module.exports = {
         text: "JavaScript",
         ariaLabel: "浏览器脚本语言",
         items: [
-          { text: "JavaScript基础语法和知识", link: "/language/chinese/" },
+          {
+            text: "JavaScript基础语法和知识",
+            link: "/js/basis/JavaScript数组中的slice方法和aplice方法的区别",
+          },
           { text: "使用Javascript操作DOM元素", link: "/language/japanese/" },
-          { text: "Ajaxy异步请求相关知识学习", link: "/language/japanese/" },
+          { text: "Ajax异步请求相关知识学习", link: "/language/japanese/" },
           { text: "ES6以上版本的Javascript", link: "/language/japanese/" },
           { text: "Javascript语法糖", link: "/language/japanese/" },
         ],
@@ -64,8 +67,18 @@ module.exports = {
         text: "GIS",
         ariaLabel: "浏览器脚本语言",
         items: [
-          { text: "开源库", link: "/language/chinese/" },
-          { text: "地图学知识", link: "/language/japanese/" },
+          {
+            text: "开源库",
+            items: [
+              {
+                text: "turf",
+                link: "/webgis/turf/turf之计算两个polygon的重叠部分",
+              },
+              { text: "leaflet", link: "/webgis/leaflet/" },
+              { text: "cesium", link: "/webgis/cesium/局部坐标系使用" },
+            ],
+          },
+          { text: "地图学知识", link: "/webgis/japanese/" },
         ],
       },
       {
@@ -147,6 +160,20 @@ module.exports = {
             ["css/掌握几大经典布局方案", "掌握几大经典布局方案"],
           ],
         },
+      ],
+      "/webgis/turf/": [
+        "turf之计算两个polygon的重叠部分",
+        "turf之计算polygon或linestring的自交点",
+      ],
+      "/webgis/cesium/": ["局部坐标系使用"],
+      "/js/basis/": [
+        [
+          "JavaScript数组中的slice方法和aplice方法的区别",
+          "JavaScript数组中的slice方法和aplice方法的区别",
+        ],
+        ["javascript之继承", "javascript之继承"],
+        ["javascript之break", "javascript之break"],
+        ["js自定义事件", "js自定义事件"],
       ],
     },
     lastUpdated: "Last Updated", // string | boolean
