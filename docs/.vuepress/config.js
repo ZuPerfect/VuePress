@@ -1,9 +1,9 @@
 module.exports = {
-  title: "三藏",
+  title: "香蕉，你个卟啦啦",
   description: "不积跬步无以至千里",
-  head: [["link", { rel: "icon", href: "/logo/1.png" }]],
+  head: [["link", { rel: "icon", href: "/logo/bnn.png" }]],
   themeConfig: {
-    logo: "/logo/1.png",
+    logo: "/logo/bnn.png",
     nav: [
       {
         text: "HTML",
