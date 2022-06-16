@@ -14,7 +14,7 @@ cd docs/.vuepress/dist
 
 git init
 git add -A
-git commit -m '更新啦！'
+git commit -m '使用depoly.sh自动提交'
 
 # 如果发布到 https://<USERNAME>.github.io
 git push -f https://github.com/ZuPerfect/ZuPerfect.github.io.git master

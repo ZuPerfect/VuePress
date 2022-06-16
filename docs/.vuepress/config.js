@@ -17,19 +17,6 @@ module.exports = {
         ],
       },
       {
-        text: "Internet",
-        ariaLabel: "网络知识",
-        items: [
-          { text: "❗❗网络工作原理", link: "/language/chinese/" },
-          { text: "❗❗什么是HTTP", link: "/language/japanese/" },
-          { text: "❗❗浏览器及工作方式", link: "/language/japanese/" },
-          { text: "❗DNS及其工作原理", link: "/language/japanese/" },
-          { text: "❗❗域名相关知识", link: "/language/japanese/" },
-          { text: "云服务相关知识", link: "/language/japanese/" },
-          { text: "网络安全", link: "/language/japanese/" },
-        ],
-      },
-      {
         text: "CSS",
         ariaLabel: "层叠样式表",
         items: [
@@ -82,38 +69,100 @@ module.exports = {
         ],
       },
       {
-        text: "包管理工具",
-        ariaLabel: "浏览器脚本语言",
+        text: "网络知识",
+        ariaLabel: "网络知识",
         items: [
-          { text: "JavaScript基础语法和知识", link: "/language/chinese/" },
-          { text: "使用Javascript操作DOM元素", link: "/language/japanese/" },
-          { text: "Ajaxy异步请求相关知识学习", link: "/language/japanese/" },
-          { text: "ES6以上版本的Javascript", link: "/language/japanese/" },
+          { text: "❗❗网络工作原理", link: "/language/chinese/" },
+          { text: "❗❗什么是HTTP", link: "/language/japanese/" },
+          { text: "❗❗浏览器及工作方式", link: "/language/japanese/" },
+          { text: "❗DNS及其工作原理", link: "/language/japanese/" },
+          { text: "❗❗域名相关知识", link: "/language/japanese/" },
+          { text: "云服务相关知识", link: "/language/japanese/" },
+          { text: "网络安全", link: "/language/japanese/" },
+        ],
+      },
+      {
+        text: "包管理工具",
+        ariaLabel: "包管理工具",
+        items: [
+          { text: "npm", link: "/language/chinese/" },
+          { text: "yarn", link: "/language/japanese/" },
         ],
       },
       {
         text: "构建工具",
         ariaLabel: "构建工具",
         items: [
-          { text: "JavaScript基础语法和知识", link: "/language/chinese/" },
-          { text: "使用Javascript操作DOM元素", link: "/language/japanese/" },
-          { text: "Ajaxy异步请求相关知识学习", link: "/language/japanese/" },
-          { text: "ES6以上版本的Javascript", link: "/language/japanese/" },
+          {
+            text: "任务执行命令",
+            items: [
+              { text: "npm script", link: "/language/chinese/" },
+              { text: "Gulp", link: "/language/chinese/" },
+            ],
+          },
+          {
+            text: "打包工具",
+            items: [
+              { text: "Webpack", link: "/language/chinese/" },
+              { text: "Parcel(不重要)", link: "/language/chinese/" },
+            ],
+          },
+          {
+            text: "代码格式化工具",
+            items: [
+              { text: "Prettier", link: "/language/chinese/" },
+              { text: "Eslint", link: "/language/chinese/" },
+            ],
+          },
         ],
       },
       {
         text: "其他",
         ariaLabel: "浏览器脚本语言",
         items: [
-          { text: "图形化编程", link: "/language/chinese/" },
-          { text: "静态站点生成器", link: "/language/japanese/" },
-          { text: "移动APP开发", link: "/language/japanese/" },
-          { text: "桌面应用开发", link: "/language/japanese/" },
+          {
+            text: "图形化编程",
+            items: [
+              { text: "Cocos Creator", link: "/language/chinese/" },
+              { text: "Three.js", link: "/language/chinese/" },
+            ],
+          },
+          {
+            text: "静态站点生成器",
+            items: [
+              { text: "Next.js", link: "/language/chinese/" },
+              { text: "GatsbyJS", link: "/language/chinese/" },
+              { text: "Nuxt.js", link: "/language/chinese/" },
+              { text: "Vuepress", link: "/language/chinese/" },
+              { text: "Hugo", link: "/language/chinese/" },
+              { text: "Electron", link: "/language/chinese/" },
+            ],
+          },
+          {
+            text: "移动APP开发",
+            items: [
+              { text: "React Native", link: "/language/chinese/" },
+              { text: "UniApp", link: "/language/chinese/" },
+              { text: "Flutter", link: "/language/chinese/" },
+              { text: "lonic", link: "/language/chinese/" },
+            ],
+          },
+          {
+            text: "桌面应用开发",
+            items: [{ text: "Electron", link: "/language/chinese/" }],
+          },
           { text: "服务端渲染", link: "/language/japanese/" },
-          { text: "版本控制", link: "/language/japanese/" },
+          {
+            text: "版本控制",
+            items: [
+              { text: "git", link: "/language/chinese/" },
+              { text: "svn", link: "/language/chinese/" },
+            ],
+          },
         ],
       },
       { text: "面试", link: "/interview/js/JS基础速记" },
+      { text: "VSCode", link: "/vscode/setting" },
     ],
     sidebar: {
       "/vue/": [
@@ -175,6 +224,7 @@ module.exports = {
         ["javascript之break", "javascript之break"],
         ["js自定义事件", "js自定义事件"],
       ],
+      "/vscode/": ["setting"],
     },
     lastUpdated: "Last Updated", // string | boolean
     // 默认值是 true 。设置为 false 来禁用所有页面的 下一篇 链接
