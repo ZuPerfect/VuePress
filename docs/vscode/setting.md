@@ -48,6 +48,13 @@ ID: ms-vscode.vs-keybindings
 发布者: Microsoft
 VS Marketplace 链接: https://marketplace.visualstudio.com/items?itemName=ms-vscode.vs-keybindings
 
+### 名称: IntelliCode API Usage Examples
+ID: VisualStudioExptTeam.intellicode-api-usage-examples
+说明: See relevant code examples from GitHub for over 100K different APIs right in your editor.
+版本: 0.1.1
+发布者: Microsoft
+VS Marketplace 链接: https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.intellicode-api-usage-examples
+
 ## 设置
 
 ### 设置滚轮缩放视图
