@@ -209,6 +209,10 @@ module.exports = {
             ["css/掌握几大经典布局方案", "掌握几大经典布局方案"],
           ],
         },
+        {
+          title: "题库",
+          children: [["题库/题库", "题库"]],
+        },
       ],
       "/webgis/turf/": [
         "turf之计算两个polygon的重叠部分",
