@@ -173,6 +173,8 @@ module.exports = {
         "el与data的两种写法",
         "MVVM模型",
         "数据代理",
+        "事件处理",
+        "事件修饰符"
       ],
       "/interview/": [
         {
