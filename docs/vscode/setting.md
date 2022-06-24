@@ -55,6 +55,13 @@ ID: VisualStudioExptTeam.intellicode-api-usage-examples
 发布者: Microsoft
 VS Marketplace 链接: https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.intellicode-api-usage-examples
 
+### 名称: Template String Converter
+ID: meganrogge.template-string-converter
+说明: Converts a string to a template string when ${ is typed
+版本: 0.6.0
+发布者: meganrogge
+VS Marketplace 链接: https://marketplace.visualstudio.com/items?itemName=meganrogge.template-string-converter
+
 ## 设置
 
 ### 设置滚轮缩放视图
@@ -62,3 +69,8 @@ VS Marketplace 链接: https://marketplace.visualstudio.com/items?itemName=Visua
 打开"设置"，直接搜索一下 id 即可：
 
 editor.mouseWheelZoom
+
+### 推荐字体 
+
+下载位置：https://github.com/tonsky/FiraCode
+教程：https://www.jianshu.com/p/266b4fa2c446?tdsourcetag=s_pctim_aiomsg
