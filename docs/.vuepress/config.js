@@ -155,7 +155,7 @@ module.exports = {
           {
             text: "版本控制",
             items: [
-              { text: "git", link: "/language/chinese/" },
+              { text: "git", link: "/git/command" },
               { text: "svn", link: "/language/chinese/" },
             ],
           },
@@ -174,7 +174,7 @@ module.exports = {
         "MVVM模型",
         "数据代理",
         "事件处理",
-        "事件修饰符"
+        "事件修饰符",
       ],
       "/interview/": [
         {
@@ -231,6 +231,7 @@ module.exports = {
         ["js自定义事件", "js自定义事件"],
       ],
       "/vscode/": ["setting"],
+      "/git/": ["command"],
     },
     lastUpdated: "Last Updated", // string | boolean
     // 默认值是 true 。设置为 false 来禁用所有页面的 下一篇 链接
