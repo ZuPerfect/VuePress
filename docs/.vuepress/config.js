@@ -9,22 +9,23 @@ module.exports = {
         text: "HTML",
         ariaLabel: "超文本标记语言",
         items: [
-          { text: "❗❗HTML基础知识学习是", link: "/language/chinese/" },
-          { text: "❗❗HTML编写规则和语义化写法", link: "/language/chinese/" },
-          { text: "❗❗表单和验证", link: "/language/chinese/" },
-          { text: "❗公约和最佳时间方法", link: "/language/chinese/" },
-          { text: "SEO基础知识", link: "/language/chinese/" },
+          { text: "❗❗HTML基础知识学习是", link: "/html/chinese/" },
+          { text: "❗❗HTML编写规则和语义化写法", link: "/html/chinese/" },
+          { text: "❗❗表单和验证", link: "/html/chinese/" },
+          { text: "❗公约和最佳时间方法", link: "/html/chinese/" },
+          { text: "SEO基础知识", link: "/html/chinese/" },
         ],
       },
       {
         text: "CSS",
         ariaLabel: "层叠样式表",
         items: [
-          { text: "CSS基础知识学习", link: "/language/chinese/" },
-          { text: "页面切图和布局实现", link: "/language/japanese/" },
-          { text: "页面响应式布局设计", link: "/language/japanese/" },
-          { text: "CSS预处理语言", link: "/language/japanese/" },
-          { text: "CSS相关框架", link: "/language/japanese/" },
+          { text: "CSS基础知识学习", link: "/css/chinese/" },
+          { text: "页面切图和布局实现", link: "/css/" },
+          { text: "页面响应式布局设计", link: "/css/" },
+          { text: "CSS预处理语言", link: "/css/" },
+          { text: "CSS相关框架", link: "/css/" },
+          { text: "Flex", link: "/css/flex" },
         ],
       },
       {
@@ -35,10 +36,10 @@ module.exports = {
             text: "JavaScript基础语法和知识",
             link: "/js/basis/JavaScript数组中的slice方法和aplice方法的区别",
           },
-          { text: "使用Javascript操作DOM元素", link: "/language/japanese/" },
-          { text: "Ajax异步请求相关知识学习", link: "/language/japanese/" },
-          { text: "ES6以上版本的Javascript", link: "/language/japanese/" },
-          { text: "Javascript语法糖", link: "/language/japanese/" },
+          { text: "使用Javascript操作DOM元素", link: "/language/" },
+          { text: "Ajax异步请求相关知识学习", link: "/language/" },
+          { text: "ES6以上版本的Javascript", link: "/language/" },
+          { text: "Javascript语法糖", link: "/language/" },
         ],
       },
       {
@@ -47,7 +48,7 @@ module.exports = {
         items: [
           { text: "React.js", link: "/language/chinese/" },
           { text: "Vue.js", link: "/vue/初识vue" },
-          { text: "Angular", link: "/language/japanese/" },
+          { text: "Angular", link: "/language/" },
         ],
       },
       {
@@ -65,7 +66,7 @@ module.exports = {
               { text: "cesium", link: "/webgis/cesium/局部坐标系使用" },
             ],
           },
-          { text: "地图学知识", link: "/webgis/japanese/" },
+          { text: "地图学知识", link: "/webgis/" },
         ],
       },
       {
@@ -73,12 +74,12 @@ module.exports = {
         ariaLabel: "网络知识",
         items: [
           { text: "❗❗网络工作原理", link: "/language/chinese/" },
-          { text: "❗❗什么是HTTP", link: "/language/japanese/" },
-          { text: "❗❗浏览器及工作方式", link: "/language/japanese/" },
-          { text: "❗DNS及其工作原理", link: "/language/japanese/" },
-          { text: "❗❗域名相关知识", link: "/language/japanese/" },
-          { text: "云服务相关知识", link: "/language/japanese/" },
-          { text: "网络安全", link: "/language/japanese/" },
+          { text: "❗❗什么是HTTP", link: "/language/" },
+          { text: "❗❗浏览器及工作方式", link: "/language/" },
+          { text: "❗DNS及其工作原理", link: "/language/" },
+          { text: "❗❗域名相关知识", link: "/language/" },
+          { text: "云服务相关知识", link: "/language/" },
+          { text: "网络安全", link: "/language/" },
         ],
       },
       {
@@ -86,7 +87,7 @@ module.exports = {
         ariaLabel: "包管理工具",
         items: [
           { text: "npm", link: "/language/chinese/" },
-          { text: "yarn", link: "/language/japanese/" },
+          { text: "yarn", link: "/language/" },
         ],
       },
       {
@@ -151,7 +152,7 @@ module.exports = {
             text: "桌面应用开发",
             items: [{ text: "Electron", link: "/language/chinese/" }],
           },
-          { text: "服务端渲染", link: "/language/japanese/" },
+          { text: "服务端渲染", link: "/language/" },
           {
             text: "版本控制",
             items: [
@@ -176,6 +177,7 @@ module.exports = {
         "事件处理",
         "事件修饰符",
       ],
+      "/css/": ['flex'],
       "/interview/": [
         {
           title: "JavaScript",
