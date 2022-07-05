@@ -112,3 +112,101 @@ Webkit 内核的浏览器，必须加上`-webkit`前缀
   flex-flow: <flex-direction> || <flex-wrap>;
 }
 ```
+
+### 3.4 justify-content 属性
+
+`justify-content`属性定义了项目在主轴上的对齐方式
+
+```css
+.box {
+  justify-content: flex-start | flex-end | center | space-between | space-around;
+}
+```
+
+![justify-content](/img/justify-content.png "justify-content")
+
+它可能取 5 个值，具体对齐方式与轴的方向有关。下面假设主轴为从左向右。
+
+- flex-start(默认值)：左对齐
+- flex-end：右对齐
+- center：居中
+- space-between：两端对齐，项目之间的间隔都相等
+- space-around：每个项目两侧的间隔相等，所以，项目之间的间隔比项目与边框的间隔大一些
+
+### 3.5 align-items 属性
+
+`align-items`属性定义项目在交叉轴上如何对齐
+
+```css
+.box {
+  align-items: flex-start | flex-end | center | baseline | stretch;
+}
+```
+
+![align-items](/img/align-items.png "align-items")
+
+他可能取 5 个值。具体的对齐方式与交叉轴有关，下面假设交叉轴从上到下。
+
+- flex-start：交叉轴的起点对齐
+- flex-end：交叉轴的终点对齐
+- center：交叉轴的中点对齐
+- baseline：项目的第一行文字的基线对齐
+- stretch(默认值)：如果项目未设置高度或者设为 auto，将占满整个容器的高度
+
+### 3.6 align-content 属性
+
+`align-content`属性定义了多根轴线的对齐方式，如果项目只有一根轴线，该属性不起作用
+
+```css
+.box {
+  align-content: flex-start | flex-end | center | space-between | space-around |
+    stretch;
+}
+```
+
+![align-content](/img/align-content.png "align-content")
+
+该属性可能取 6 个值
+
+- flex-start：与交叉轴的起点对齐
+- flex-end：与交叉轴的终点对齐
+- center：与交叉轴的中点对齐
+- space-between：与交叉轴的两端对齐
+- space-around：每根轴线两侧的间隔都相等。所以，轴线之间的间隔比轴线与边框的间隔大一些
+- stretch(默认值)：轴线占满整个交叉轴
+
+## 四、项目的属性
+
+项目上有以下 6 个属性
+
+- order
+- flex-grow
+- flex-shrink
+- flex-basis
+- flex
+- align-self
+
+### order 属性
+
+`order` 属性定义项目的排列顺序，数值越小，排列越靠前，默认为 0
+
+```css
+.item {
+  order: <integer>;
+}
+```
+
+![order](/img/order.png "order")
+
+### 4.2 flex-grow 属性
+
+`flex-grow`属性定义项目的放大比例，默认为 0，即如果存在剩余空间，也不放大
+
+```css
+.item {
+  flex-grow: <number>;
+}
+```
+
+![flex-grow](/img/flex-grow.png "flex-grow")
+如果所有项目的`flex-grow`属性都为 1，则它们将等分剩余空间（如果有的话）。如果一个项目的`flex-grow`属性为 2，其他项目都为 1，则前者占据的剩余空间将比其他项多一倍，如上图所示。
