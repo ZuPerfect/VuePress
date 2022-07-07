@@ -66,7 +66,16 @@ module.exports = {
               { text: "cesium", link: "/webgis/cesium/局部坐标系使用" },
             ],
           },
-          { text: "地图学知识", link: "/webgis/" },
+          {
+            text: "地图学知识",
+            items: [
+              {
+                text: "参考系",
+                link: "/webgis/",
+              },
+              { text: "几何运算", link: "/webgis/node/lineOverlap" },
+            ],
+          },
         ],
       },
       {
@@ -177,7 +186,7 @@ module.exports = {
         "事件处理",
         "事件修饰符",
       ],
-      "/css/": ['flex'],
+      "/css/": ["flex"],
       "/interview/": [
         {
           title: "JavaScript",
@@ -222,6 +231,7 @@ module.exports = {
         "turf之计算两个polygon的重叠部分",
         "turf之计算polygon或linestring的自交点",
       ],
+      "/webgis/node/": ["lineOverlap", "multiPointSplitLine"],
       "/webgis/cesium/": ["局部坐标系使用"],
       "/js/basis/": [
         [
