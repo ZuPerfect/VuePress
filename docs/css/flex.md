@@ -210,3 +210,55 @@ Webkit 内核的浏览器，必须加上`-webkit`前缀
 
 ![flex-grow](/img/flex-grow.png "flex-grow")
 如果所有项目的`flex-grow`属性都为 1，则它们将等分剩余空间（如果有的话）。如果一个项目的`flex-grow`属性为 2，其他项目都为 1，则前者占据的剩余空间将比其他项多一倍，如上图所示。
+
+### 4.3 flex-shrink 属性
+
+`flex-shrink` 属性定义了项目的缩小比例，默认为 1，即如果空间不足，该项目将缩小。
+
+```js
+.item{
+  flex-shrink:<number>
+}
+```
+
+![flex-shrink](/img/flex-shrink.png "flex-shrink")
+
+如果所有项目的`flex-shrink`属性都为 1，当空间不足时，都将等比例缩小。如果一个项目的`flex-shrink`属性为 0，其他项目都为 1，则空间不足时，前者不缩小。
+
+负值对改属性无效
+
+### 4.4 flex-basis 属性
+
+`flex-basis`属性定义了在分配多余空间之前，项目占据的主轴空间。浏览器根据这个属性，计算主轴是否有多余空间，它的默认值为`auto`，即项目的本来大小。
+
+```css
+.item {
+  flex-basis: <length> | auto;
+}
+```
+
+它可以设为根`width`或`height`属性一样的值（比如 350px），则项目将占据固定空间。
+
+### 4.5 flex 属性
+
+`flex`属性是`flex-grow`,`flex-shrink`和`flex-basis`的简写，默认值为` 0 1 auto`、后两个属性可选。
+
+```css
+.item {
+  flex: none | [< "flex-grow" > < "flex-shrink" >?||< "flex-basis" >];
+}
+```
+
+该属性有两个快捷值：`auto(1 1 auto)`和`none(0 0 auto)`。
+建议优先使用这两个属性，而不是单独写三个分离的属性，因为浏览器会推算相关值。
+
+### 4.6 align-self 属性
+
+`align-self`属性允许单个项目有与其他项目不同的对齐方式，可覆盖`align-items`属性。默认值为`auto`,表示继承父元素的`align-items`属性，如果没有父元素，则等同于`stretch`
+
+```css
+.items {
+  align-self: auto | flex-start | flex-end | center | baseline | stretch;
+}
+```
+![align-self](/img/align-self.png "align-self")
