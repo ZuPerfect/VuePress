@@ -72,5 +72,7 @@ editor.mouseWheelZoom
 
 ### 推荐字体 
 
-下载位置：https://github.com/tonsky/FiraCode
-教程：https://www.jianshu.com/p/266b4fa2c446?tdsourcetag=s_pctim_aiomsg
+[下载位置：https://github.com/tonsky/FiraCode](https://github.com/tonsky/FiraCode)
+
+
+[教程：https://www.jianshu.com/p/266b4fa2c446?tdsourcetag=s_pctim_aioms](https://www.jianshu.com/p/266b4fa2c446?tdsourcetag=s_pctim_aioms)

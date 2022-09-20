@@ -1,8 +1,3 @@
-<!--
- * @Author: zhupengfei6623
- * @Date: 2020-09-14 11:23:25
- * @Description: file content
--->
 
 ## 用途
 单独使用break语句的作用是立即退出<font color=red>**最内层**</font>的循环或switch语句，它的语法如下:

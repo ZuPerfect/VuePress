@@ -241,6 +241,7 @@ module.exports = {
         ["javascript之继承", "javascript之继承"],
         ["javascript之break", "javascript之break"],
         ["js自定义事件", "js自定义事件"],
+        ["js之四舍五入", "js之四舍五入"],
       ],
       "/vscode/": ["setting"],
       "/git/": ["command"],
