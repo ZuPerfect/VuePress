@@ -223,6 +223,15 @@ module.exports = {
           ],
         },
         {
+          title: "Vue",
+          children: [
+            [
+              "vue/面试题汇总",
+              "面试题汇总",
+            ]
+          ],
+        },
+        {
           title: "题库",
           children: [["题库/题库", "题库"]],
         },
