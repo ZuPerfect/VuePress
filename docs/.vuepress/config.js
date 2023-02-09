@@ -185,6 +185,7 @@ module.exports = {
         "数据代理",
         "事件处理",
         "事件修饰符",
+        "vuex",
       ],
       "/css/": ["flex"],
       "/interview/": [
@@ -196,10 +197,7 @@ module.exports = {
             ["js/关于闭包的几道面试题", "关于闭包的几道面试题"],
             ["js/关于对象的深浅克隆", "关于对象(数组)的深浅克隆"],
             ["js/一道面向对象的面试题-阿里", "一道面向对象的面试题-阿里"],
-            [
-              "js/一道关于JS微任务和宏任务的面试题-头条",
-              "一道关于微任务和宏任务的面试题",
-            ],
+            ["js/一道关于JS微任务和宏任务的面试题-头条", "一道关于微任务和宏任务的面试题"],
             ["js/关于==的一道面试题", "关于==的一道面试题"],
             ["js/vue的双向数据绑定", "vue的双向数据绑定"],
             ["js/JS原型链", "原型链"],
@@ -211,42 +209,25 @@ module.exports = {
         {
           title: "CSS",
           children: [
-            [
-              "css/掌握盒子水平垂直居中的五大方案",
-              "掌握盒子水平垂直居中的五大方案",
-            ],
-            [
-              "css/关于css3中盒子模型的几道面试题",
-              "关于css3中盒子模型的几道面试题",
-            ],
+            ["css/掌握盒子水平垂直居中的五大方案", "掌握盒子水平垂直居中的五大方案"],
+            ["css/关于css3中盒子模型的几道面试题", "关于css3中盒子模型的几道面试题"],
             ["css/掌握几大经典布局方案", "掌握几大经典布局方案"],
           ],
         },
         {
           title: "Vue",
-          children: [
-            [
-              "vue/面试题汇总",
-              "面试题汇总",
-            ]
-          ],
+          children: [["vue/面试题汇总", "面试题汇总"]],
         },
         {
           title: "题库",
           children: [["题库/题库", "题库"]],
         },
       ],
-      "/webgis/turf/": [
-        "turf之计算两个polygon的重叠部分",
-        "turf之计算polygon或linestring的自交点",
-      ],
+      "/webgis/turf/": ["turf之计算两个polygon的重叠部分", "turf之计算polygon或linestring的自交点"],
       "/webgis/node/": ["lineOverlap", "multiPointSplitLine"],
       "/webgis/cesium/": ["局部坐标系使用"],
       "/js/basis/": [
-        [
-          "JavaScript数组中的slice方法和aplice方法的区别",
-          "JavaScript数组中的slice方法和aplice方法的区别",
-        ],
+        ["JavaScript数组中的slice方法和aplice方法的区别", "JavaScript数组中的slice方法和aplice方法的区别"],
         ["javascript之继承", "javascript之继承"],
         ["javascript之break", "javascript之break"],
         ["js自定义事件", "js自定义事件"],
