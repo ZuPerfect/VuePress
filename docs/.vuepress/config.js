@@ -48,6 +48,7 @@ module.exports = {
         items: [
           { text: "React.js", link: "/language/chinese/" },
           { text: "Vue.js", link: "/vue/初识vue" },
+          { text: "Vue3.js", link: "/vue3/customRef" },
           { text: "Angular", link: "/language/" },
         ],
       },
@@ -187,6 +188,7 @@ module.exports = {
         "事件修饰符",
         "vuex",
       ],
+      "/vu3/": ["customRef"],
       "/css/": ["flex"],
       "/interview/": [
         {

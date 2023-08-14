@@ -111,3 +111,71 @@ export default new Vuex.Store({
 3、组件中修改 vuex 中的数据：`$store.dispatch('actions中的方法名',数据)`或`$store.commit('mutations中的方法名',数据)`
 
 _备注：若没有网络请求或者其他业务逻辑，组件中也可以越过 actions，即不写`dispatch`,直接写`commit`_
+
+## 6. 四个 map 方法的使用
+
+1、**mapState 方法：** 用于帮助我们映射`state`中的数据为计算属性
+
+```js
+// 引入
+import {mapState} from 'vuex'
+
+computed: {
+  // 借助mapState生成计算属性（对象写法）
+  ...mapState({sum:'sum',school:'school'}),
+
+  // 借助mapState生成计算属性（数组写法）
+  ...mapState(['sum','school']),
+
+}
+```
+
+2、**mapGetters 方法：** 用于帮助我们映射`getters`中的数据为计算属性
+
+```js
+// 引入
+import {mapGetters} from 'vuex'
+
+computed: {
+  // 借助mapGetters生成计算属性（对象写法）
+  ...mapGetters({bigSum:'bigSum'}),
+
+  // 借助mapGetters生成计算属性（数组写法）
+  ...mapGetters(['bigSum']),
+
+}
+```
+
+3、**mapActions 方法：** 用于帮助我们生成与`actions`对话的方法、即：包含`$store.dispatch(xxx)`的函数
+
+```js
+// 引入
+import {mapActions} from 'vuex'
+
+methods: {
+  // 对象写法
+  ...mapActions({incrementOdd:'jiaOdd'}),
+
+  // 数组写法
+  ...mapActions(['jiaOdd']),
+
+}
+```
+
+4、**mapMutations 方法：** 用于帮助我们生成与`mutations`对话的方法、即：包含`$store.commit(xxx)`的函数
+
+```js
+// 引入
+import {mapMutations} from 'vuex'
+
+methods: {
+  // 对象写法
+  ...mapMutations({incrementOdd:'JIA'}),
+
+  // 数组写法
+  ...mapMutations(['JIA']),
+
+}
+```
+
+_备注: mapActions 与 mapMutations 使用时，若需要传递参数需要: 在模板中绑定事件时传递好参数，否则参数是事件对象。_
