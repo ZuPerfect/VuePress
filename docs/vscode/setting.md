@@ -1,5 +1,7 @@
-# VSCODE设置备忘
+# VSCODE 设置备忘
+
 ## 插件
+
 ### 名称: Chinese (Simplified) (简体中文) Language Pack for Visual Studio Code
 
 ID: MS-CEINTL.vscode-language-pack-zh-hans
@@ -32,6 +34,28 @@ ID: OBKoro1.korofileheader
 发布者: OBKoro1
 VS Marketplace 链接: https://marketplace.visualstudio.com/items?itemName=OBKoro1.korofileheader
 
+常用配置：
+
+```json
+{
+  "fileheader.customMade": {
+    //此为头部注释
+    "Description": "",
+    "Autor": "ZuPerfect",
+    "Date": "Do not edit",
+    "LastEditors": "ZuPerfect",
+    "LastEditTime": "Do not edit"
+  },
+  "fileheader.cursorMode": {
+    //此为函数注释
+    "description": "",
+    "param": "",
+    "return": "void",
+    "author": "ZuPerfect"
+  }
+}
+```
+
 ### 名称: Prettier - Code formatter
 
 ID: esbenp.prettier-vscode
@@ -49,6 +73,7 @@ ID: ms-vscode.vs-keybindings
 VS Marketplace 链接: https://marketplace.visualstudio.com/items?itemName=ms-vscode.vs-keybindings
 
 ### 名称: IntelliCode API Usage Examples
+
 ID: VisualStudioExptTeam.intellicode-api-usage-examples
 说明: See relevant code examples from GitHub for over 100K different APIs right in your editor.
 版本: 0.1.1
@@ -56,6 +81,7 @@ ID: VisualStudioExptTeam.intellicode-api-usage-examples
 VS Marketplace 链接: https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.intellicode-api-usage-examples
 
 ### 名称: Template String Converter
+
 ID: meganrogge.template-string-converter
 说明: Converts a string to a template string when ${ is typed
 版本: 0.6.0
@@ -70,9 +96,8 @@ VS Marketplace 链接: https://marketplace.visualstudio.com/items?itemName=megan
 
 editor.mouseWheelZoom
 
-### 推荐字体 
+### 推荐字体
 
 [下载位置：https://github.com/tonsky/FiraCode](https://github.com/tonsky/FiraCode)
-
 
 [教程：https://www.jianshu.com/p/266b4fa2c446?tdsourcetag=s_pctim_aioms](https://www.jianshu.com/p/266b4fa2c446?tdsourcetag=s_pctim_aioms)
