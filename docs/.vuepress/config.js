@@ -80,6 +80,22 @@ module.exports = {
         ],
       },
       {
+        text: "三维开发",
+        ariaLabel: "三维开发",
+        items: [
+          {
+            text: "三维引擎",
+            items: [
+              {
+                text: "three.js",
+                link: "",
+              },
+              { text: "cesium.js", link: "/webgis/cesium/局部坐标系使用" },
+            ],
+          },
+        ],
+      },
+      {
         text: "网络知识",
         ariaLabel: "网络知识",
         items: [
