@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function fibonacci(n) {
+        const arr = [1, 1];
+        let prev1 = 1;
+        let prev2 = 1;
+        for (let i = 2; i < n; i++) {
+          let cur = prev1 + prev2;
+          arr.push(cur);
+          prev1 = prev2;
+          prev2 = cur;
+        }
+
+        console.log(arr);
+      }
+
+      fibonacci(100);
+
+      function quickSort(arr) {
+        let left = [];
+        let right = [];
+        let mid = arr[0];
+        for (let i = 1; i < arr.length - 1; i++) {
+          if (arr[i] < mid) {
+            left.push(arr[i]);
+          } else {
+            right.push(arr[i]);
+          }
+        }
+        return [...quickSort(left), mid, ...quickSort(right)];
+      }
+    </script>
+  </head>
+  <body></body>
+</html>
