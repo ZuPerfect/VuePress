@@ -35,6 +35,148 @@
         }
         return [...quickSort(left), mid, ...quickSort(right)];
       }
+
+      function countChar(str) {
+        const charMap = new Map();
+        for (const char of charMap) {
+          charMap.set(char, charMap[char] + 1 || 1);
+        }
+        return charMap;
+      }
+
+      // vue2和vue3的区别
+      /*
+      组合式API
+      组件的根节点支持了多个根节点
+      支持异步组件的加载
+      数据响应式原理也做了重构
+      */
+
+      // vue2中使用了Object.defineProperty()方法实现了响应式，但是这个方法有一定的局限性，那就是对对象新增，删除的属性监听不到，并且对数据的变化也没办法监听，所以
+      // vue2中针对这些短板还做了专门的处理。比如数组的话重写了其可以改变数组的方法，对象的话则针对新增和删除属性提供了单独的方法进行处理
+      // vue3中就这块痛点做了重构，使用了Proxy方法，完美解决了这个问题
+      /*
+      computed擅长处理的场景：一个数据受多个数据影响的情况，支持缓存，好处式再一个模板中多次使用同一个计算属性的时候，可以避免重复的计算，减少了不必要的计算开销，提高性能，一定需要return，内部不支持异步操作，默认第一个加载的时候就执行
+      watch擅长处理的场景：一个数据影响多个数据的情况，不持支缓存、不一定需要return，内部支持异步，默认第一个不监听
+
+      es6有哪些新特性
+      箭头函数
+      块级作用域
+      结构赋值
+      默认参数
+      扩展运算符
+      类和模块
+      promise
+      模板字符串
+      */
+
+      function deepCopy(obj) {
+        if (obj === null || typeof obj !== "object") {
+          return obj;
+        }
+
+        if (obj instanceof Date) {
+          return new Date(obj);
+        }
+
+        if (obj instanceof RegExp) {
+          return new RegExp(obj);
+        }
+
+        let newObj = new obj.constructor();
+        for (const key in obj) {
+          if (Object.hasOwnProperty.call(obj, key)) {
+            newObj[key] = deepCopy(obj[key]);
+          }
+        }
+
+        return newObj;
+      }
+
+      function bubbleSort(arr) {
+        for (let i = 0; i < arr.length; i++) {
+          for (let j = 0; j < arr.length - 1 - i; j++) {
+            if (arr[j] < arr[j + 1]) {
+              [arr[j], arr[j + 1]] = [arr[j + 1], arr[j]];
+            }
+          }
+        }
+      }
+
+      function debounce(fn, wait) {
+        let timeouter = null;
+        return function () {
+          const _this = this;
+          const args = arguments;
+          if (timeouter) {
+            clearTimeout(timeouter);
+          }
+          timeouter = setTimeout(function () {
+            fn.apply(_this, args);
+          }, wait);
+        };
+      }
+
+      function throttle(fn, wait) {
+        let timeouter = null;
+        return function () {
+          const _this = this;
+          const args = arguments;
+          if (!timeouter) {
+            timeouter = setTimeout(function () {
+              fn.apply(_this, args);
+              timeouter = null;
+            }, wait);
+          }
+        };
+      }
+
+      function quickSort(arr) {
+        if (arr.length <= 1) {
+          return arr;
+        }
+        const left = [];
+        const right = [];
+        const mid = arr[0];
+        for (let i = 1; i < arr.length; i++) {
+          if (arr[i] < mid) {
+            left.push(arr[i]);
+          } else {
+            right.push(arr[i]);
+          }
+        }
+        return [...quickSort(left), mid, ...quickSort(right)];
+      }
+
+      function chooceSort(arr) {
+        for (let i = 0; i < arr.length - 1; i++) {
+          for (let j = i + 1; j < arr.length; j++) {
+            if (arr[i] < arr[j]) {
+              [arr[i], arr[j]] = [arr[j], arr[i]];
+            }
+          }
+        }
+      }
+
+      // 数组拉平
+      function flattenArray(arr) {
+        const result = [];
+        for (let i = 0; i < arr.length; i++) {
+          if (Array.isArray(arr[i])) {
+            result.push(...flattenArray(arr[i]));
+          } else {
+            result.push(arr[i]);
+          }
+        }
+        return result;
+      }
+
+      // window,navigator,location,history,screen
+      // location.reload()
+      // http-equiv=refresh
+      // window.top
+      // 单例模式，工厂模式，观察者模式，发布订阅模式，代理模式
+      // vue用到了发布订阅模型，代理模式，工厂模式，观察者模式，
     </script>
   </head>
   <body></body>
