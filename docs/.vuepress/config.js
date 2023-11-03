@@ -240,6 +240,10 @@ module.exports = {
           title: "题库",
           children: [["题库/题库", "题库"]],
         },
+        {
+          title: "算法",
+          children: [["算法/算法", "算法"]],
+        },
       ],
       "/webgis/turf/": ["turf之计算两个polygon的重叠部分", "turf之计算polygon或linestring的自交点"],
       "/webgis/node/": ["lineOverlap", "multiPointSplitLine"],
