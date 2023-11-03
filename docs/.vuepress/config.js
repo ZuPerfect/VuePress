@@ -9,11 +9,11 @@ module.exports = {
         text: "HTML",
         ariaLabel: "超文本标记语言",
         items: [
-          { text: "❗❗HTML基础知识学习是", link: "/html/chinese/" },
-          { text: "❗❗HTML编写规则和语义化写法", link: "/html/chinese/" },
-          { text: "❗❗表单和验证", link: "/html/chinese/" },
-          { text: "❗公约和最佳时间方法", link: "/html/chinese/" },
-          { text: "SEO基础知识", link: "/html/chinese/" },
+          { text: "❗❗HTML基础知识学习", link: "/html/" },
+          { text: "❗❗HTML编写规则和语义化写法", link: "/html/" },
+          { text: "❗❗表单和验证", link: "/html/" },
+          { text: "❗公约和最佳时间方法", link: "/html/" },
+          { text: "SEO基础知识", link: "/html/" },
         ],
       },
       {
@@ -36,20 +36,20 @@ module.exports = {
             text: "JavaScript基础语法和知识",
             link: "/js/basis/JavaScript数组中的slice方法和aplice方法的区别",
           },
-          { text: "使用Javascript操作DOM元素", link: "/language/" },
-          { text: "Ajax异步请求相关知识学习", link: "/language/" },
-          { text: "ES6以上版本的Javascript", link: "/language/" },
-          { text: "Javascript语法糖", link: "/language/" },
+          { text: "使用Javascript操作DOM元素", link: "" },
+          { text: "Ajax异步请求相关知识学习", link: "" },
+          { text: "ES6以上版本的Javascript", link: "" },
+          { text: "Javascript语法糖", link: "" },
         ],
       },
       {
         text: "框架",
         ariaLabel: "浏览器脚本语言",
         items: [
-          { text: "React.js", link: "/language/chinese/" },
+          { text: "React.js", link: "" },
           { text: "Vue.js", link: "/vue/初识vue" },
           { text: "Vue3.js", link: "/vue3/customRef" },
-          { text: "Angular", link: "/language/" },
+          { text: "Angular", link: "" },
         ],
       },
       {
@@ -88,7 +88,7 @@ module.exports = {
             items: [
               {
                 text: "three.js",
-                link: "",
+                link: "https://github.com/ZuPerfect/ThreeJsDemo",
               },
               { text: "cesium.js", link: "/webgis/cesium/局部坐标系使用" },
             ],
@@ -99,21 +99,21 @@ module.exports = {
         text: "网络知识",
         ariaLabel: "网络知识",
         items: [
-          { text: "❗❗网络工作原理", link: "/language/chinese/" },
-          { text: "❗❗什么是HTTP", link: "/language/" },
-          { text: "❗❗浏览器及工作方式", link: "/language/" },
-          { text: "❗DNS及其工作原理", link: "/language/" },
-          { text: "❗❗域名相关知识", link: "/language/" },
-          { text: "云服务相关知识", link: "/language/" },
-          { text: "网络安全", link: "/language/" },
+          { text: "❗❗网络工作原理", link: "" },
+          { text: "❗❗什么是HTTP", link: "" },
+          { text: "❗❗浏览器及工作方式", link: "" },
+          { text: "❗DNS及其工作原理", link: "" },
+          { text: "❗❗域名相关知识", link: "" },
+          { text: "云服务相关知识", link: "" },
+          { text: "网络安全", link: "" },
         ],
       },
       {
         text: "包管理工具",
         ariaLabel: "包管理工具",
         items: [
-          { text: "npm", link: "/language/chinese/" },
-          { text: "yarn", link: "/language/" },
+          { text: "npm", link: "" },
+          { text: "yarn", link: "" },
         ],
       },
       {
@@ -123,22 +123,22 @@ module.exports = {
           {
             text: "任务执行命令",
             items: [
-              { text: "npm script", link: "/language/chinese/" },
-              { text: "Gulp", link: "/language/chinese/" },
+              { text: "npm script", link: "" },
+              { text: "Gulp", link: "" },
             ],
           },
           {
             text: "打包工具",
             items: [
-              { text: "Webpack", link: "/language/chinese/" },
-              { text: "Parcel(不重要)", link: "/language/chinese/" },
+              { text: "Webpack", link: "" },
+              { text: "vite", link: "" },
             ],
           },
           {
             text: "代码格式化工具",
             items: [
-              { text: "Prettier", link: "/language/chinese/" },
-              { text: "Eslint", link: "/language/chinese/" },
+              { text: "Prettier", link: "" },
+              { text: "Eslint", link: "" },
             ],
           },
         ],
@@ -149,41 +149,38 @@ module.exports = {
         items: [
           {
             text: "图形化编程",
-            items: [
-              { text: "Cocos Creator", link: "/language/chinese/" },
-              { text: "Three.js", link: "/language/chinese/" },
-            ],
+            items: [{ text: "Cocos Creator", link: "" }],
           },
           {
             text: "静态站点生成器",
             items: [
-              { text: "Next.js", link: "/language/chinese/" },
-              { text: "GatsbyJS", link: "/language/chinese/" },
-              { text: "Nuxt.js", link: "/language/chinese/" },
-              { text: "Vuepress", link: "/language/chinese/" },
-              { text: "Hugo", link: "/language/chinese/" },
-              { text: "Electron", link: "/language/chinese/" },
+              { text: "Next.js", link: "" },
+              { text: "GatsbyJS", link: "" },
+              { text: "Nuxt.js", link: "" },
+              { text: "Vuepress", link: "" },
+              { text: "Hugo", link: "" },
+              { text: "Electron", link: "" },
             ],
           },
           {
             text: "移动APP开发",
             items: [
-              { text: "React Native", link: "/language/chinese/" },
-              { text: "UniApp", link: "/language/chinese/" },
-              { text: "Flutter", link: "/language/chinese/" },
-              { text: "lonic", link: "/language/chinese/" },
+              { text: "React Native", link: "" },
+              { text: "UniApp", link: "" },
+              { text: "Flutter", link: "" },
+              { text: "lonic", link: "" },
             ],
           },
           {
             text: "桌面应用开发",
-            items: [{ text: "Electron", link: "/language/chinese/" }],
+            items: [{ text: "Electron", link: "" }],
           },
           { text: "服务端渲染", link: "/language/" },
           {
             text: "版本控制",
             items: [
               { text: "git", link: "/git/command" },
-              { text: "svn", link: "/language/chinese/" },
+              { text: "svn", link: "" },
             ],
           },
         ],
@@ -259,7 +256,6 @@ module.exports = {
       "/git/": ["command"],
     },
     lastUpdated: "Last Updated", // string | boolean
-    // 默认值是 true 。设置为 false 来禁用所有页面的 下一篇 链接
     // 默认值是 true 。设置为 false 来禁用所有页面的 下一篇 链接
     nextLinks: true,
     // 默认值是 true 。设置为 false 来禁用所有页面的 上一篇 链接
