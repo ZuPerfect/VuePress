@@ -96,12 +96,12 @@ function debounce(fn, wait, immediate) {
 
       timeouter = setTimeout(function () {
         timeouter = null;
-        fn.apply(_this, args);
       }, wait);
       immedaite = false;
     } else {
       timeouter = setTimeout(function () {
         fn.apply(_this, args);
+        immedaite = true;
       }, wait);
     }
   };
