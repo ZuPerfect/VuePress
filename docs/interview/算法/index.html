@@ -244,7 +244,7 @@
       }
 
       function bubbleSort(arr) {
-        for (let i = 0; i < arr.length-1; i++) {
+        for (let i = 0; i < arr.length - 1; i++) {
           for (let j = 0; j < arr.length - 1 - i; j++) {
             if (arr[j] < arr[j + 1]) {
               [arr[j], arr[j + 1]] = [arr[j + i], arr[j]];
@@ -270,7 +270,78 @@
         return [...quickSort(left), mid, ...quickSort(right)];
       }
 
-      function
+      function chooseSort(arr) {
+        for (let i = 0; i < arr.length - 1; i++) {
+          for (let j = i + 1; j < arr.length; j++) {
+            if (arr[j] < arr[i]) {
+              [arr[j], arr[i]] = [arr[i], arr[j]];
+            }
+          }
+        }
+      }
+
+      function deboubce(fn, wait, immediate) {
+        let timeouter = null;
+        return function () {
+          const _this = this;
+          const args = arguments;
+          if (timeouter) {
+            clearTimeout(timeouter);
+          }
+
+          if (immediate) {
+            const callNow = !timeouter;
+            if (callNow) {
+              fn.apply(_this, args);
+            }
+
+            timeouter = setTimeout(function () {
+              timeouter = null;
+            }, wait);
+            immediate = false;
+          } else {
+            timeouter = setTimeout(function () {
+              fn.apply(_this, args);
+              immediate = true;
+            }, wait);
+          }
+        };
+      }
+
+      function throttle(fn, wait) {
+        let timeouter = null;
+        return function () {
+          const _this = this;
+          const args = arguments;
+          if (!timeouter) {
+            timeouter = setTimeout(function () {
+              fn.apply(_this, args);
+              timeouter = null;
+            }, wait);
+          }
+        };
+      }
+
+      function deepCopy(obj) {
+        if (obj === null || typeof obj !== "object") {
+          return obj;
+        }
+        if (obj instanceof Date) {
+          return new Date(obj);
+        }
+
+        if (obj instanceof RegExp) {
+          return new RegExp(obj);
+        }
+
+        const newObj = new obj.constructor();
+        for (const key in obj) {
+          if (Object.hasOwnProperty.call(obj, key)) {
+            newObj[key] = deepCopy(obj[key]);
+          }
+        }
+        return newObj;
+      }
     </script>
   </head>
 
