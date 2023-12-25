@@ -29,7 +29,7 @@ module.exports = {
         ],
       },
       {
-        text: "JavaScript",
+        text: "JS",
         ariaLabel: "浏览器脚本语言",
         items: [
           {
@@ -40,6 +40,17 @@ module.exports = {
           { text: "Ajax异步请求相关知识学习", link: "" },
           { text: "ES6以上版本的Javascript", link: "" },
           { text: "Javascript语法糖", link: "" },
+        ],
+      },
+      {
+        text: "TS",
+        ariaLabel: "TypeScript",
+        items: [
+          {
+            text: "入门",
+            link: "/js/basis/JavaScript数组中的slice方法和aplice方法的区别",
+          },
+          { text: "在react中的使用", link: "/ts/ts在react中的使用" }
         ],
       },
       {
