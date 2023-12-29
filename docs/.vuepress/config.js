@@ -54,10 +54,36 @@ module.exports = {
         text: "框架",
         ariaLabel: "浏览器脚本语言",
         items: [
-          { text: "React.js", link: "" },
-          { text: "Vue.js", link: "/vue/初识vue" },
-          { text: "Vue3.js", link: "/vue3/customRef" },
-          { text: "Angular", link: "" },
+          {
+            text: "React.js",
+            items: [
+              {
+                text: 'Foxglove面板扩展',
+                link: ""
+              }
+            ]
+          },
+          {
+            text: "Vue.js",
+            items: [{
+              text: '初识vue',
+              link: "/vue/初识vue"
+            }]
+          },
+          {
+            text: "Vue3.js",
+            items: [{
+              text: 'customRef',
+              link: "/vue3/customRef"
+            }]
+          },
+          {
+            text: "Angular",
+            items: [{
+              text: 'Angular',
+              link: ""
+            }]
+          },
         ],
       },
       {
