@@ -59,7 +59,7 @@ module.exports = {
             items: [
               {
                 text: 'Foxglove面板扩展',
-                link: ""
+                link: "/react/foxglove.md"
               }
             ]
           },
@@ -143,14 +143,6 @@ module.exports = {
         ],
       },
       {
-        text: "包管理工具",
-        ariaLabel: "包管理工具",
-        items: [
-          { text: "npm", link: "" },
-          { text: "yarn", link: "" },
-        ],
-      },
-      {
         text: "构建工具",
         ariaLabel: "构建工具",
         items: [
@@ -188,12 +180,7 @@ module.exports = {
           {
             text: "静态站点生成器",
             items: [
-              { text: "Next.js", link: "" },
-              { text: "GatsbyJS", link: "" },
-              { text: "Nuxt.js", link: "" },
-              { text: "Vuepress", link: "" },
-              { text: "Hugo", link: "" },
-              { text: "Electron", link: "" },
+              { text: "Vuepress", link: "/staticSide/index.md" },
             ],
           },
           {
@@ -210,6 +197,14 @@ module.exports = {
             items: [{ text: "Electron", link: "" }],
           },
           { text: "服务端渲染", link: "/language/" },
+          {
+            text: "包管理工具",
+            ariaLabel: "包管理工具",
+            items: [
+              { text: "npm", link: "" },
+              { text: "yarn", link: "" },
+            ],
+          },
           {
             text: "版本控制",
             items: [
