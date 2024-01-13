@@ -6,50 +6,84 @@ module.exports = {
     logo: "/logo/bnn.png",
     nav: [
       {
-        text: "HTML",
-        ariaLabel: "超文本标记语言",
-        items: [
-          { text: "❗❗HTML基础知识学习", link: "/html/" },
-          { text: "❗❗HTML编写规则和语义化写法", link: "/html/" },
-          { text: "❗❗表单和验证", link: "/html/" },
-          { text: "❗公约和最佳时间方法", link: "/html/" },
-          { text: "SEO基础知识", link: "/html/" },
-        ],
-      },
-      {
-        text: "CSS",
-        ariaLabel: "层叠样式表",
-        items: [
-          { text: "CSS基础知识学习", link: "/css/chinese/" },
-          { text: "页面切图和布局实现", link: "/css/" },
-          { text: "页面响应式布局设计", link: "/css/" },
-          { text: "CSS预处理语言", link: "/css/" },
-          { text: "CSS相关框架", link: "/css/" },
-          { text: "Flex", link: "/css/flex" },
-        ],
-      },
-      {
-        text: "JavaScript",
-        ariaLabel: "浏览器脚本语言",
-        items: [
-          {
-            text: "JavaScript基础语法和知识",
-            link: "/js/basis/JavaScript数组中的slice方法和aplice方法的区别",
-          },
-          { text: "使用Javascript操作DOM元素", link: "" },
-          { text: "Ajax异步请求相关知识学习", link: "" },
-          { text: "ES6以上版本的Javascript", link: "" },
-          { text: "Javascript语法糖", link: "" },
-        ],
+        text: "基础语言",
+        ariaLabel: "前端基础语言",
+        items: [{
+          text: "HTML",
+          items: [
+            { text: "❗❗HTML基础知识学习", link: "/html/" },
+            { text: "❗❗HTML编写规则和语义化写法", link: "/html/" },
+            { text: "❗❗表单和验证", link: "/html/" },
+            { text: "❗公约和最佳时间方法", link: "/html/" },
+            { text: "SEO基础知识", link: "/html/" },
+          ],
+        }, {
+          text: "CSS",
+          ariaLabel: "层叠样式表",
+          items: [
+            { text: "CSS基础知识学习", link: "/css/chinese/" },
+            { text: "页面切图和布局实现", link: "/css/" },
+            { text: "页面响应式布局设计", link: "/css/" },
+            { text: "CSS预处理语言", link: "/css/" },
+            { text: "CSS相关框架", link: "/css/" },
+            { text: "Flex", link: "/css/flex" },
+          ],
+        }, {
+          text: "JavaScript",
+          ariaLabel: "浏览器脚本语言",
+          items: [
+            {
+              text: "JavaScript基础语法和知识",
+              link: "/js/basis/JavaScript数组中的slice方法和aplice方法的区别",
+            },
+            { text: "使用Javascript操作DOM元素", link: "" },
+            { text: "Ajax异步请求相关知识学习", link: "" },
+            { text: "ES6以上版本的Javascript", link: "" },
+            { text: "Javascript语法糖", link: "" },
+          ],
+        }, {
+          text: "TypeScript",
+          ariaLabel: "TypeScript",
+          items: [
+            { text: "入门", link: "" },
+            { text: "在react中的使用", link: "/ts/ts在react中的使用" }
+          ],
+        }]
       },
       {
         text: "框架",
         ariaLabel: "浏览器脚本语言",
         items: [
-          { text: "React.js", link: "" },
-          { text: "Vue.js", link: "/vue/初识vue" },
-          { text: "Vue3.js", link: "/vue3/customRef" },
-          { text: "Angular", link: "" },
+          {
+            text: "React.js",
+            items: [
+              {
+                text: 'Foxglove面板扩展',
+                link: "/react/foxglove.md"
+              }
+            ]
+          },
+          {
+            text: "Vue.js",
+            items: [{
+              text: '初识vue',
+              link: "/vue/初识vue"
+            }]
+          },
+          {
+            text: "Vue3.js",
+            items: [{
+              text: 'customRef',
+              link: "/vue3/customRef"
+            }]
+          },
+          {
+            text: "Angular",
+            items: [{
+              text: 'Angular',
+              link: ""
+            }]
+          },
         ],
       },
       {
@@ -109,14 +143,6 @@ module.exports = {
         ],
       },
       {
-        text: "包管理工具",
-        ariaLabel: "包管理工具",
-        items: [
-          { text: "npm", link: "" },
-          { text: "yarn", link: "" },
-        ],
-      },
-      {
         text: "构建工具",
         ariaLabel: "构建工具",
         items: [
@@ -154,12 +180,7 @@ module.exports = {
           {
             text: "静态站点生成器",
             items: [
-              { text: "Next.js", link: "" },
-              { text: "GatsbyJS", link: "" },
-              { text: "Nuxt.js", link: "" },
-              { text: "Vuepress", link: "" },
-              { text: "Hugo", link: "" },
-              { text: "Electron", link: "" },
+              { text: "Vuepress", link: "/staticSide/index.md" },
             ],
           },
           {
@@ -176,6 +197,14 @@ module.exports = {
             items: [{ text: "Electron", link: "" }],
           },
           { text: "服务端渲染", link: "/language/" },
+          {
+            text: "包管理工具",
+            ariaLabel: "包管理工具",
+            items: [
+              { text: "npm", link: "" },
+              { text: "yarn", link: "" },
+            ],
+          },
           {
             text: "版本控制",
             items: [

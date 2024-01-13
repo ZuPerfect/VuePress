@@ -17,7 +17,8 @@ git add -A
 git commit -m '使用depoly.sh自动提交'
 
 # 如果发布到 https://<USERNAME>.github.io
-git push -f git@github.com:ZuPerfect/ZuPerfect.github.io.git master
+# git push -f git@github.com:ZuPerfect/ZuPerfect.github.io.git master
+git push -f https://github.com/ZuPerfect/ZuPerfect.github.io.git master
 
 # 如果发布到 https://<USERNAME>.github.io/<REPO>
 # git push -f git@github.com:<USERNAME>/<REPO>.git master:gh-pages
