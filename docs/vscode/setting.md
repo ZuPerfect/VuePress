@@ -34,6 +34,13 @@ ID: OBKoro1.korofileheader
 发布者: OBKoro1
 VS Marketplace 链接: https://marketplace.visualstudio.com/items?itemName=OBKoro1.korofileheader
 
+
+### 名称: Monokai Pro
+ID: monokai.theme-monokai-pro-vscode
+说明: Professional theme and matching icons, from the author of the original Monokai color scheme.
+版本: 1.2.2
+发布者: monokai
+VS Marketplace 链接: https://marketplace.visualstudio.com/items?itemName=monokai.theme-monokai-pro-vscode
 常用配置：
 
 ```json
@@ -80,13 +87,12 @@ ID: VisualStudioExptTeam.intellicode-api-usage-examples
 发布者: Microsoft
 VS Marketplace 链接: https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.intellicode-api-usage-examples
 
-### 名称: Template String Converter
-
-ID: meganrogge.template-string-converter
-说明: Converts a string to a template string when ${ is typed
-版本: 0.6.0
-发布者: meganrogge
-VS Marketplace 链接: https://marketplace.visualstudio.com/items?itemName=meganrogge.template-string-converter
+### 名称: Monokai Pro
+ID: monokai.theme-monokai-pro-vscode
+说明: Professional theme and matching icons, from the author of the original Monokai color scheme.
+版本: 1.2.2
+发布者: monokai
+VS Marketplace 链接: https://marketplace.visualstudio.com/items?itemName=monokai.theme-monokai-pro-vscode
 
 ## 设置
 
@@ -98,6 +104,16 @@ editor.mouseWheelZoom
 
 ### 推荐字体
 
+#### FiraCode
+
 [下载位置：https://github.com/tonsky/FiraCode](https://github.com/tonsky/FiraCode)
 
 [教程：https://www.jianshu.com/p/266b4fa2c446?tdsourcetag=s_pctim_aioms](https://www.jianshu.com/p/266b4fa2c446?tdsourcetag=s_pctim_aioms)
+
+#### Monaco
+配置
+``` json
+    "editor.fontFamily": "Monaco",
+    "editor.lineHeight": 26,
+```
+
