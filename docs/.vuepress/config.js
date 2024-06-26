@@ -212,6 +212,13 @@ module.exports = {
               { text: "svn", link: "" },
             ],
           },
+          {
+            text: "操作系统",
+            items: [
+              { text: "mac", link: "/mac/index.md" }
+            ]
+
+          }
         ],
       },
       { text: "面试", link: "/interview/js/JS基础速记" },
